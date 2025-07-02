@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/catalog.css" />
+    <link rel="stylesheet" href="../css/resetcss.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Каталог — Tonecraft</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="../index.html"><img src="../images/logo.svg" alt="logo" /></a>
+      </div>
+      <nav class="nav">
+        <a href="catalog.html">Каталог</a>
+        <a href="profil.html">Профиль</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
+    </header>
+
+    <div class="catalog-page">
+      <nav class="catalog-categories-wrapper">
+        <div class="catalog-categories-list">
+          <button class="catalog-category-btn">
+            <a href="sales.html" class="catalog-category-btn">Акции</a>
+          </button>
+          <button class="catalog-category-btn">
+            Клавишные
+            <svg
+              class="select-arrow"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#1e1e1e"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+          </button>
+          <button class="catalog-category-btn">
+            Струнные
+            <svg
+              class="select-arrow"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#1e1e1e"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+          </button>
+          <button class="catalog-category-btn">
+            Духовые
+            <svg
+              class="select-arrow"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#1e1e1e"
+                stroke-width="2"
+                fill="none"
+              />
+            </svg>
+          </button>
+          <button class="catalog-category-btn">Ударные</button>
+          <button class="catalog-category-btn">Аксессуары</button>
+        </div>
+      </nav>
+      <nav class="breadcrumbs" aria-label="breadcrumb">
+        <a href="../index.html">Главная</a>
+        <span class="breadcrumbs-separator">→</span>
+        <span>Каталог</span>
+      </nav>
+      <main class="catalog-main">
+        <aside class="filters">
+          <h2>Фильтры</h2>
+          <div class="filter-group">
+            <label class="filter-label">Категория:</label>
+            <div class="custom-select" tabindex="0">
+              <span class="selected-option">Струнные</span>
+              <svg
+                class="select-arrow"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5"
+                  stroke="#e8d7b9"
+                  stroke-width="2"
+                  fill="none"
+                />
+              </svg>
+              <ul class="select-options">
+                <li data-value="Все">Все</li>
+                <li data-value="Клавишные">Клавишные</li>
+                <li data-value="Струнные">Струнные</li>
+                <li data-value="Духовые">Духовые</li>
+                <li data-value="Ударные">Ударные</li>
+                <li data-value="Аксессуары">Аксессуары</li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Цена:</label>
+            <div class="custom-range">
+              <input type="range" min="1000" max="200000" value="50000" />
+            </div>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Бренд:</label>
+            <div class="custom-checkbox">
+              <label><input type="checkbox" /> Yamaha</label>
+              <label><input type="checkbox" /> Fender</label>
+              <label><input type="checkbox" /> Gibsun</label>
+              <label><input type="checkbox" /> Roland</label>
+            </div>
+            <div class="show-more">показать больше…</div>
+            <button class="filter-btn">Применить</button>
+          </div>
+        </aside>
+        <section class="products">
+          <div class="product-card">
+            <img src="../images/git-fender.jpg" alt="Электрогитара" />
+            <h3>Электрогитара Fender</h3>
+            <p>179 999 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/skripki.webp" alt="Скрипка" />
+            <h3>Скрипка Yamaha</h3>
+            <p>139 499 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/barab.avif" alt="Барабаны" />
+            <h3>Барабаны Yamaha</h3>
+            <p>89 999 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/Roland-piano.jpeg" alt="Пианино" />
+            <h3>Пианино Roland</h3>
+            <p>389 990 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/saksofon.jpg" alt="Саксофон" />
+            <h3>Саксофон Yamaha</h3>
+            <p>144 990 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/shure_micro.webp" alt="Микрофон" />
+            <h3>Микрофон Shure</h3>
+            <p>69 999 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/gibson-git.webp" alt="Акустическая гитара" />
+            <h3>Акустическая гитара Gibson</h3>
+            <p>643 990 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="../images/Roland-barabani.webp"
+              alt="Электронные барабаны"
+            />
+            <h3>Электронные барабаны Roland</h3>
+            <p>229 990 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/trub-yamaha.jpg" alt="Труба" />
+            <h3>Труба Yamaha</h3>
+            <p>74 999 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/korg-sint.jpg" alt="Синтезатор" />
+            <h3>Синтезатор Korg</h3>
+            <p>348 890₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/stentor-kontrabas.jpg" alt="Контрабас" />
+            <h3>Контрабас Stentor</h3>
+            <p>109 790 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/fleita-perl.jpg" alt="Флейта" />
+            <h3>Флейта Pearl</h3>
+            <p>64 990 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/bayan-tula.jpg" alt="Баян" />
+            <h3>Баян Тула</h3>
+            <p>97 449 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="../images/klarnet-buf.jpg" alt="Кларнет" />
+            <h3>Кларнет Buffet</h3>
+            <p>246 199 ₽</p>
+            <div class="product-card-btns">
+              <button class="buy-now-btn">Купить сейчас</button>
+              <button>В корзину</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <img
+                src="../images/logo.svg"
+                alt="ToneCraft"
+                class="footer-logo-img"
+              />
+            </div>
+            <div class="footer-social-label">Мы в социальных сетях:</div>
+            <div class="footer-socials">
+              <a href="#"
+                ><img
+                  src="../images/free-icon-telegram-2111646.png"
+                  alt="Telegram"
+              /></a>
+              <a href="#"
+                ><img src="../images/free-icon-vk-2504953.png" alt="VK"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/free-icon-whatsapp-4494494.png"
+                  alt="WhatsApp"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/free-icon-instagram-2111463.png"
+                  alt="Instagram"
+              /></a>
+            </div>
+            <div class="footer-address">Г. Москва, ул. Арбат 12с1</div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-menu-title">Дополнительно</div>
+            <ul class="footer-menu">
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="about.html">Доставка</a></li>
+              <li><a href="sales.html">Акции</a></li>
+              <li><a href="admin.html">Админ-панель</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          2003—2025 © Все права защищены. Интернет-магазин музыкальных<br />
+          инструментов ToneCraft
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Кастомный select
+      const customSelect = document.querySelector(".custom-select");
+      const selectedOption = customSelect.querySelector(".selected-option");
+      const optionsList = customSelect.querySelector(".select-options");
+      optionsList.style.display = "none";
+      customSelect.addEventListener("click", function (e) {
+        optionsList.style.display =
+          optionsList.style.display === "block" ? "none" : "block";
+      });
+      optionsList.querySelectorAll("li").forEach((option) => {
+        option.addEventListener("click", function (e) {
+          selectedOption.textContent = this.textContent;
+          optionsList.style.display = "none";
+        });
+      });
+      document.addEventListener("click", function (e) {
+        if (!customSelect.contains(e.target)) {
+          optionsList.style.display = "none";
+        }
+      });
+    </script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>
